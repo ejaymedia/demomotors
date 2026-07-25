@@ -386,7 +386,7 @@ const AdminDashboard = () => {
             <img
               src={settings.logo_url}
               alt={settings.business_name}
-              className="h-8 w-auto object-contain"
+              className="h-8 w-auto max-w-[140px] object-contain"
             />
           ) : (
             <span className="text-gray-900 font-bold text-base truncate">

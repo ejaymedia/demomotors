@@ -56,7 +56,7 @@ const AdminLogin = () => {
             <img
               src={settings.logo_url}
               alt={settings.business_name}
-              className="h-14 w-auto object-contain mb-4"
+              className="h-14 w-auto max-w-[200px] object-contain mb-4"
             />
           ) : (
             <div className="w-14 h-14 rounded-2xl bg-brand-500 flex items-center justify-center mb-4 shadow-lg shadow-brand-100">
