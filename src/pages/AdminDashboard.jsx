@@ -493,11 +493,23 @@ const AdminDashboard = () => {
           </div>
           <div className="flex items-center gap-2">
             <div className="relative">
-              <button className="w-9 h-9 rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center text-gray-500 hover:text-brand-500 transition-colors">
+              <button
+                onClick={() => {
+                  setActiveTab("enquiries");
+                  setSidebarOpen(false);
+                }}
+                className="w-9 h-9 rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center text-gray-500 hover:text-brand-500 transition-colors"
+              >
                 <Bell size={16} />
               </button>
               {newEnquiriesCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 bg-brand-500 rounded-full flex items-center justify-center text-[9px] text-white font-bold">
+                <span
+                  onClick={() => {
+                    setActiveTab("enquiries");
+                    setSidebarOpen(false);
+                  }}
+                  className="absolute -top-1 -right-1 w-4 h-4 bg-brand-500 rounded-full flex items-center justify-center text-[9px] text-white font-bold cursor-pointer"
+                >
                   {newEnquiriesCount}
                 </span>
               )}
