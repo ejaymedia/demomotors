@@ -74,7 +74,7 @@ const Navbar = () => {
               <img
                 src={settings.logo_url}
                 alt={settings.business_name}
-                className="h-8 w-auto max-w-[160px] object-contain"
+                className="h-12 w-auto max-w-[160px] object-contain"
               />
             ) : (
               <span className="text-gray-900 font-bold text-xl tracking-wide">

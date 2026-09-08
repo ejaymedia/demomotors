@@ -65,9 +65,6 @@ const AdminLogin = () => {
               </span>
             </div>
           )}
-          <h1 className="text-gray-900 font-bold text-xl">
-            {settings.business_name}
-          </h1>
           <p className="text-brand-500 text-xs font-bold tracking-[0.3em] uppercase mt-1">
             Admin Portal
           </p>
