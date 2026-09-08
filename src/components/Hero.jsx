@@ -25,7 +25,7 @@ const Hero = () => {
           />
         ) : (
           <img
-            src={`${import.meta.env.BASE_URL}hero/hero-bg.jpg`}
+            src={`${import.meta.env.BASE_URL}hero/hero-bg.png`}
             alt={`${settings.business_name} Hero`}
             className="w-full h-full object-cover object-center"
           />
@@ -45,8 +45,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex items-center gap-3 mb-6"
           >
-            <div className="w-8 h-[1px] bg-brand-400" />
-            <span className="text-brand-400 text-xs font-semibold tracking-[0.2em] uppercase">
+            <div className="w-8 h-[1px] bg-gray-300" />
+            <span className="text-gray-300 text-xs font-semibold tracking-[0.2em] uppercase">
               Welcome to {settings.business_name}
             </span>
           </motion.div>
@@ -60,7 +60,7 @@ const Hero = () => {
           >
             {settings.tagline}
             <br />
-            <span className="text-brand-400">
+            <span className="text-gray-300">
               <Typewriter
                 words={[
                   "of Your Dreams.",
